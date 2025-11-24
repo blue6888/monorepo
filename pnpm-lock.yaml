@@ -669,12 +669,18 @@ importers:
       '@vben/locales':
         specifier: workspace:*
         version: link:../../packages/locales
+      '@vben/login':
+        specifier: workspace:*
+        version: link:../../packages/share-page/login
       '@vben/plugins':
         specifier: workspace:*
         version: link:../../packages/effects/plugins
       '@vben/preferences':
         specifier: workspace:*
         version: link:../../packages/preferences
+      '@vben/provider':
+        specifier: workspace:*
+        version: link:../../packages/provider
       '@vben/request':
         specifier: workspace:*
         version: link:../../packages/effects/request
@@ -732,12 +738,18 @@ importers:
       '@vben/locales':
         specifier: workspace:*
         version: link:../../packages/locales
+      '@vben/login':
+        specifier: workspace:*
+        version: link:../../packages/share-page/login
       '@vben/plugins':
         specifier: workspace:*
         version: link:../../packages/effects/plugins
       '@vben/preferences':
         specifier: workspace:*
         version: link:../../packages/preferences
+      '@vben/provider':
+        specifier: workspace:*
+        version: link:../../packages/provider
       '@vben/request':
         specifier: workspace:*
         version: link:../../packages/effects/request
@@ -1828,6 +1840,81 @@ importers:
       '@vben-core/typings':
         specifier: workspace:*
         version: link:../@core/base/typings
+
+  packages/provider:
+    dependencies:
+      '@vben-core/form-ui':
+        specifier: workspace:*
+        version: link:../@core/ui-kit/form-ui
+      '@vben-core/shadcn-ui':
+        specifier: workspace:*
+        version: link:../@core/ui-kit/shadcn-ui
+      '@vben-core/shared':
+        specifier: workspace:*
+        version: link:../@core/base/shared
+      '@vben/hooks':
+        specifier: workspace:*
+        version: link:../effects/hooks
+      '@vben/icons':
+        specifier: workspace:*
+        version: link:../icons
+      '@vben/locales':
+        specifier: workspace:*
+        version: link:../locales
+      '@vben/preferences':
+        specifier: workspace:*
+        version: link:../preferences
+      '@vben/types':
+        specifier: workspace:*
+        version: link:../types
+      '@vben/utils':
+        specifier: workspace:*
+        version: link:../utils
+      '@vueuse/core':
+        specifier: 'catalog:'
+        version: 13.9.0(vue@3.5.24(typescript@5.9.3))
+      vue:
+        specifier: ^3.5.24
+        version: 3.5.24(typescript@5.9.3)
+
+  packages/share-page/login:
+    dependencies:
+      '@vben-core/form-ui':
+        specifier: workspace:*
+        version: link:../../@core/ui-kit/form-ui
+      '@vben-core/shadcn-ui':
+        specifier: workspace:*
+        version: link:../../@core/ui-kit/shadcn-ui
+      '@vben-core/shared':
+        specifier: workspace:*
+        version: link:../../@core/base/shared
+      '@vben/hooks':
+        specifier: workspace:*
+        version: link:../../effects/hooks
+      '@vben/icons':
+        specifier: workspace:*
+        version: link:../../icons
+      '@vben/locales':
+        specifier: workspace:*
+        version: link:../../locales
+      '@vben/preferences':
+        specifier: workspace:*
+        version: link:../../preferences
+      '@vben/provider':
+        specifier: workspace:*
+        version: link:../../provider
+      '@vben/types':
+        specifier: workspace:*
+        version: link:../../types
+      '@vben/utils':
+        specifier: workspace:*
+        version: link:../../utils
+      '@vueuse/core':
+        specifier: 'catalog:'
+        version: 13.9.0(vue@3.5.24(typescript@5.9.3))
+      vue:
+        specifier: ^3.5.24
+        version: 3.5.24(typescript@5.9.3)
 
   packages/stores:
     dependencies:

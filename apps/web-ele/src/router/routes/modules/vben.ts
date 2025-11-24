@@ -90,6 +90,16 @@ const routes: RouteRecordRaw[] = [
     },
   },
   {
+    name: 'Cs',
+    path: '/vben-admin/cs',
+    component: () => import('#/views/_core/share-page/index.vue'),
+    meta: {
+      icon: 'lucide:copyright',
+      title: '共享页面测试',
+      order: 9999,
+    },
+  },
+  {
     name: 'Profile',
     path: '/profile',
     component: () => import('#/views/_core/profile/index.vue'),

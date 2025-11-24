@@ -145,6 +145,14 @@
       "path": "packages/preferences",
     },
     {
+      "name": "@vben/provider",
+      "path": "packages/provider",
+    },
+    {
+      "name": "@vben/login",
+      "path": "packages/share-page/login",
+    },
+    {
       "name": "@vben/stores",
       "path": "packages/stores",
     },

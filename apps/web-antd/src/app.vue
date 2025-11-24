@@ -3,6 +3,7 @@ import { computed } from 'vue';
 
 import { useAntdDesignTokens } from '@vben/hooks';
 import { preferences, usePreferences } from '@vben/preferences';
+import { GlobalProvider } from '@vben/provider';
 
 import { App, ConfigProvider, theme } from 'ant-design-vue';
 
@@ -32,8 +33,10 @@ const tokenTheme = computed(() => {
 
 <template>
   <ConfigProvider :locale="antdLocale" :theme="tokenTheme">
-    <App>
-      <RouterView />
-    </App>
+    <GlobalProvider project="antvue">
+      <App>
+        <RouterView />
+      </App>
+    </GlobalProvider>
   </ConfigProvider>
 </template>
